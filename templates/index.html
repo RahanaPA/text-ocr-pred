@@ -4,18 +4,19 @@
 
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1> OCR Tool </h1>
-      <p> Extract text from Images <p>
+    <!-- <div class="jumbotron"> -->
+      <p><h1 align="center">Text Extraction from Image</h1></p>
+    <!-- </div> -->
+    <div class="row">
+      <label for="image_file">Select image(s)</label>
+      <input class="form-control" type="file" id="image_file" name="myfile" multiple>
+      <br>
+      <button class="btn btn-info" onclick="performOCR()"> Extract Text </button>
+      <br>
+      <hr style="width:100%;text-align:left;margin-left:0">
+      <hr style="width:100%;text-align:left;margin-left:0">
+      <div id="bulk_result" style="display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 10px;">
     </div>
-    <label for="image_file">Select image(s)</label>
-    <input class="btn btn-warning" type="file" id="image_file" name="myfile" multiple>
-    <br>
-    <button class="btn btn-success" onclick="performOCR()"> Extract Text </button>
-    <br>
-    <hr style="width:100%;text-align:left;margin-left:0">
-    <hr style="width:100%;text-align:left;margin-left:0">
-    <div id="bulk_result" style="display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 10px;">
   </div>
 </body>
 
