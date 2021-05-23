@@ -44,10 +44,10 @@
         processData: false,
         success: function(data) {
           if (endpoint == '/api/v1/extract_text') {
-            swal("Converted Text", data.text);
+            swal("Extracted Text", data.text);
           }
           else {
-            swal("Request Recieved", "Converted files will start showing up at the bottom soon!");
+            swal("Request Recieved", "Extracted File will start showing up at the bottom soon!");
             getConvertedFiles(data.task_id, data.num_files);
           }
         }
@@ -86,6 +86,6 @@
   }
 
 function displayText(id) {
-  swal("Converted Text", document.getElementById(id).getAttribute("info"))
+  swal("extracted Text", document.getElementById(id).getAttribute("info"))
 }
 </script>
